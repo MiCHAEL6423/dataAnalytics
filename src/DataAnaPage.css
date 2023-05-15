@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-inter: "Inter", serif;
+}
+
+body {
+    font-family: var(--font-inter);
+    color: white;
+    background-color: #2B7A77;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 0.2fr .75fr 1fr 2fr;
+    grid-template-rows: .3fr repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #2F3136;
+}
+
+/* NavBar */
+.pnl_NavBar {
+    grid-area: 1 / 1 / 5 / 2;
+    background: #2B7A77;
+    opacity: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ProjectBar */
+.pnl_MemberBar {
+    grid-area: 1 / 2 / 5 / 3;
+    background: #3AAEA9;
+    opacity: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.txt_Members {
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0.5%;
+    left: 22%;
+    font-weight: Medium;
+    font-size: 30px;
+    opacity: 1;
+    text-align: left;
+    background-color: transparent;
+    border: 0px solid;
+}
+
+
+
+.searchBar {
+    color: white;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 170px;
+    font-weight: Medium;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+    background-color: transparent;
+    border: 0px solid;
+    border-radius: 5px;
+    background-color: #2B7A77;
+}
+
+.project1{
+    background-color: #17242A;
+    border-radius: 20px;
+    box-shadow: 4px 9px 30px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 30%;
+    left: 1%;
+    width: 16vw;
+    height: 10vh;
+    font-size:30px;
+    cursor: pointer;
+}
+
+.project2{
+    background-color: #17242A;
+    border-radius: 20px;
+    box-shadow: 4px 9px 30px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 5%;
+    width: 16vw;
+    height: 10vh;
+    font-size:30px;
+    cursor: pointer;
+}
+
+/* Title */
+.pnl_Title {
+    grid-area: 1 / 3 / 2 / 5;
+    background: #3AAEA9;
+    opacity: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.txt_DataAnalytics {
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: -10%;
+    left: 36%;
+    font-weight: Medium;
+    font-size: 40px;
+    opacity: 1;
+    text-align: left;
+    background-color: transparent;
+    border: 0px solid;
+}
+
+/* Project Description */
+.pnl_projectD {
+    grid-area: 2 / 3 / 3 / 3;
+    background: #2B7A77;
+    opacity: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.divProjectD {
+    background-color: #17242A;
+    border-radius: 20px;
+    box-shadow: 4px 9px 30px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 2%;
+    left: 1%;
+    width: 25vw;
+    height: 28vh;
+}
+
+.txt_ProjectD{
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 2%;
+    left: 2%;
+    font-weight: Medium;
+    font-size: 30px;
+    opacity: 1;
+    text-align: middle;
+    background-color: transparent;
+    border: 0px solid;
+}
+
+.totalTasks{
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 15%;
+    left: 2%;
+    font-weight: Medium;
+    font-size: 25px;
+    opacity: 1;
+    text-align: middle;
+}
+
+.completedTasks{
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 20%;
+    left: 2%;
+    font-weight: Medium;
+    font-size: 25px;
+    opacity: 1;
+    text-align: middle;
+}
+
+.pg1{
+    position: relative;
+    top: 30%;
+    left: 2%;
+    width: 23vw;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-weight: medium;
+
+}
+
+
+
+/* Allocation of tasks */
+.pnl_Allocation {
+    grid-area: 3 / 3 / 4 / 4;
+    background: #2B7A77;
+    opacity: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.divAllocation{
+    background-color: #17242A;
+    border-radius: 20px;
+    box-shadow: 4px 9px 30px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 2%;
+    left: 1%;
+    width: 25vw;
+    height: 28vh;
+}
+
+.txt_Allocation{
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 2%;
+    left: 3%;
+    font-weight: Medium;
+    font-size: 30px;
+    opacity: 1;
+    text-align: middle;
+    background-color: transparent;
+    border: 0px solid;
+}
+
+.pieChart {
+    top: 17%;
+    left: 3%;
+    position: absolute;
+    width: 22vw;
+    height: 22vh;
+    border-radius: 30px;
+    border-color: #3AAEA9;
+}
+
+/* AOI */
+.pnlAOI {
+    grid-area: 4 / 3 / 5 / 4;
+    background: #2B7A77;
+    opacity: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.divAOI {
+    background-color: #17242A;
+    border-radius: 20px;
+    box-shadow: 4px 9px 30px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 2%;
+    left: 1%;
+    width: 25vw;
+    height: 26vh;
+}
+
+
+.txtAOI {
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 2%;
+    left: 10%;
+    font-weight: Medium;
+    font-size: 30px;
+    opacity: 1;
+    text-align: middle;
+    background-color: transparent;
+    border: 0px solid;
+}
+
+.btn_AOI {
+    width: 32vw;
+    height: 4vh;
+    background: #3AAEA9;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-weight: medium;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+    left: 1.5%;
+    top: 2vh;
+    cursor: pointer;
+}
+
+/*  List of tasks */
+.pnl_LOT{
+    grid-area: 2 / 4 / 4 / 5;
+    background: #2B7A77;
+    opacity: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.divLOT{
+    background-color: #17242A;
+    border-radius: 20px;
+    box-shadow: 4px 9px 30px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 2%;
+    left: 1%;
+    width: 49vw;
+    height: 58vh;
+}
+
+.txt_Allocation{
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 2%;
+    left: 1%;
+    font-weight: Medium;
+    font-size: 30px;
+    opacity: 1;
+    text-align: middle;
+    background-color: transparent;
+    border: 0px solid;
+}
+
+/* Requirements */
+.pnl_Requirements {
+    grid-area: 4 / 4 / 5 / 5;
+    background: #2B7A77;
+    opacity: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.divTrainingRequirements {
+    background-color: #17242A;
+    border-radius: 20px;
+    box-shadow: 4px 9px 30px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 2.5%;
+    left: 0.8%;
+    width: 49vw;
+    height: 12.5vh;
+}
+
+.txt_TR { 
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 1%;
+    left: 1.5%;
+    font-weight: Medium;
+    font-size: 25px;
+    opacity: 1;
+    text-align: left;
+    background-color: transparent;
+    border: 0px solid;
+}
+
+.btn_TR {
+    width: 43vw;
+    height: 4vh;
+    background: #3AAEA9;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-weight: medium;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+    left: 1.5%;
+    top: 1vh;
+    cursor: pointer;
+}
+
+.divResourceRequirements {
+    background-color: #17242A;
+    border-radius: 20px;
+    box-shadow: 4px 9px 30px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 5%;
+    left: 0.8%;
+    width: 49vw;
+    height: 12.5vh;
+}
+
+.txt_RR {
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 1%;
+    left: 1.5%;
+    font-weight: Medium;
+    font-size: 25px;
+    opacity: 1;
+    text-align: left;
+    background-color: transparent;
+    border: 0px solid;
+}
+
+.btn_RR {
+    width: 43vw;
+    height: 4vh;
+    background: #3AAEA9;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-weight: medium;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+    left: 1.5%;
+    top: 1vh;
+    cursor: pointer;
+}
